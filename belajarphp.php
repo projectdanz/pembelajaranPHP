@@ -86,4 +86,192 @@
 
     echo "<hr>";
 
+    //php comparison operator
+    $data = 6;
+    $data2 = 6;
+    
+    // equal: mengecek nilai tanpa mengecek type datanya
+    if($data == $data2) {
+        echo "ini sudah benar <br>";
+    }else {
+        echo "ini salah <br>";
+    }
+
+    //identical: mengecek nilainy dan juga typedatanya
+    if ($data === $data2){
+        echo "ini sudah benar <br>";
+    }else {
+        echo "ini salah <br>";
+    }
+
+    //not equal: kondisi ketika tidak sama dengan
+    if($data != $data2) {
+        echo "ini tidak sama <br>";
+    }else {
+        echo "ini sama dengan <br>";
+    }
+
+    // php greater than or equal
+    $a = 5;
+    $b = 5;
+
+    if ($a > $b) {
+        echo "ini pakai greater than <br>";
+    } elseif ($a >= $b) {
+        echo "ini pakai greater than or equal <br>";
+    } else {
+        echo "ini salah <br>";
+    }
+
+    // php less than or equal
+    if ($a < $b) {
+        echo "ini pakai less than <br>";
+    } elseif ($a <= $b) {
+        echo "ini pakai less than or equal <br>";
+    } else {
+        echo "ini salah <br>";
+    }
+
+    echo "<hr>";
+
+    // php if else
+
+    $data1 = 5;
+    $data2 = 6;
+
+    if ($data1 > $data2) {
+        echo "data 1 lebih besar dari data 2";
+    } else {
+        echo "data 2 lebih besar dari data 1";
+    }
+
+    echo "<br>";
+    // php if elseif else: digunakan saat ada 3 atau lebih kondisi yang diinginkan
+
+    $a = 20;
+    $b = 20;
+
+    if ($a > $b) {
+        echo "a lebih besar dari b";
+    } elseif ($a < $b) {
+        echo "a lebih kecil dari b";
+    } else {
+        echo "a dan b nilainy sama";
+    }
+
+    echo "<br>";
+
+    //PHP switch statment 
+    $waktu = "pagi";
+
+    switch ($waktu) {
+        case "pagi":
+             echo "ini waktu pagi";
+            break;
+        case "siang":
+            echo "ini waktu siang";
+            break;
+        case "sore":
+            echo "ini waktu sore";
+            break;
+        case "malam":
+            echo "ini waktu malam";
+            break;
+        default:
+            echo "waktu tidak ditemukan";
+    }
+
+    echo "<hr>";
+
+    //PHP loops 
+
+    // while loop: digunakan saat kondisi dicek diawal
+    $a = 1;
+
+    while ($a <= 5) {
+        echo "angka ke-$a <br>";
+        $a++;
+    }
+
+    echo "<hr>";
+
+    // do...while: menjalankan blok kode baru mengecek kondisiny
+    $a = 1;
+    do {
+        echo "angka ke-$a <br>";
+        $a++;
+    } while ($a <= 10);
+
+    echo "<hr>";
+
+    // for loop 
+
+    for ($a = 1; $a <= 20; $a++) {
+        echo "angka ke-$a <br>";
+    }
+
+    echo "<hr>";
+
+    // foreach 
+
+    $array = [
+        "apel",
+        "mangga",
+        "jeruk",
+        "semangka"
+    ];
+
+    foreach ($array as $b) {
+        echo "saya suka buah $b<br>";
+    }
+
+ echo "<hr>";
+
+ //function 
+
+ function myMessage() {
+    echo "hello world via function";
+ }
+
+ myMessage(); // cara memanggil function
+
+ echo "<br>";
+
+ function myName($a) {
+    echo "hello $a";
+ }
+
+
+myName("masura"); // cara memanggil function dan mengisi parameternya
+
+ echo "<br>";
+
+$angka1 = 10; 
+$angka2 = 20;
+
+function jumlah($a, $b){
+    return $a + $b;
+}
+
+$data = jumlah($angka1, $angka2);
+echo "hasil dari $angka1 + $angka2 adalah $data";
+
+
+echo"<br>";
+
+// global dan local scope
+
+$global = "Masura"; //global scope
+
+function nama() {
+    global $global; // cara memenggil $variabel global scope
+    $local = "Dani"; // local scope
+
+    return "hello" . " " . $global . " " . $local;
+}
+
+$fungsi = nama();
+echo $fungsi;
+
+
 ?>
