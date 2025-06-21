@@ -9,6 +9,8 @@
    C. Menghapus variabel  
    D. Menghitung data
 
+
+
 2. Manakah yang merupakan cara penulisan komentar satu baris yang benar di PHP?  
    A. `<!-- Ini komentar -->`  
    B. `# Ini komentar`  
@@ -51,6 +53,13 @@
    ```
 
 7. Buat variabel lokal dan tampilkan nilainya dengan `echo`.
+
+```
+   isi jawaban didalam sini: 
+
+
+
+   ```
 
 8. Apa hasil dari kode berikut?
    ```php
