@@ -347,4 +347,6 @@ $nomor = array(10, 20, 30, 40, 50);
 array_splice($nomor, 1, 3);
 print_r($nomor);
 
-
+function helo() {
+    echo "helloword";
+} 
